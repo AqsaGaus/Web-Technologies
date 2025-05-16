@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+header a {
+  color: #666 !important;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    min-height: 100px;
+}
+
+footer a {
+    color: #ccc !important;
+}
+.main-menu {
+  background-color: #fff !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+.brands {
+    color: #666 !important;
+  }
+
+/* Media Query Starts*/
+@media screen and (max-width: 575px) {
+  .logo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .top-menu {
+    justify-content: center !important;
+  }
+}
+/* Media Query Ends*/

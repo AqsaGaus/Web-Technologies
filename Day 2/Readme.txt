@@ -1,0 +1,9 @@
+Bootstrap :
+1. many ready made classes.
+2. many readymade html code available
+3. many JavaScript based plugin are available (component)
+4. Bootstrap follows grid concept column no.12
+  
+
+http://metbkcaqsagaus.s3-website-us-east-1.amazonaws.com
+
