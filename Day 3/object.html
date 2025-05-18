@@ -1,0 +1,32 @@
+<script>
+  var product = {
+    name: "Shirt",
+    price: 1000,
+    discount: 20,
+    path: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVHoEiT82Xkhtbj72LQnRV1cm61ix01IfhlYiS0DfjqGlP7ZbX4qeZs4Olt3u_u4zWiEuWtjTHsADTFrDpgt7b5AlunFztwKJTcXt5p9IYc-FkWG-CX30BUw",
+    size: ["xs", "s", "m", "l", "xl", "xxl", "xxxl"],
+  };
+  console.log(product);
+  document.write(`
+        <div>
+            <img src="${product.path}" />
+            <h2>Price : ${product.price}</h2>
+            <p>Product name : ${product.name}</p>
+            <p>Product Size : ${product.size.join(" | ")}</p>
+            <button>Add To Cart </button>
+
+         </div>
+    `);
+</script>
+
+<style>
+  div {
+    border: solid;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+  }
+</style>

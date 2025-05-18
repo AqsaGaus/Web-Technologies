@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <h1 id="x1">Hello</h1>
+    <p id="x2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, repellat?
+    </p>
+    <button>Submit</button>
+    <script>
+      console.log(document);
+      console.log(document.querySelector("button"));
+
+      document.querySelector("button").onclick = function () {
+        console.log(document.getElementById("x1"));
+        console.log(document.getElementById("x2"));
+
+        document.getElementById("x1").innerHTML = "<u>Good Morning</u>";
+        document.getElementById("x2").innerText = "<u>Good Morning</u>";
+        document.getElementById("x1").style.background = "purple";
+        document.getElementById("x1").style.background = "purple";
+
+        document.getElementById("x1").remove();
+        document.getElementById("x2").remove();
+      };
+    </script>
+  </body>
+</html>

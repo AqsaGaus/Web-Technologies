@@ -1,0 +1,64 @@
+<script>
+  var product = [
+    {
+      name: "Shirt",
+      price: 1000,
+      discount: 20,
+      path: "https://levi.in/cdn/shop/files/A35850006_01_Styleshot_360x.jpg?v=1736749672",
+      size: ["xs", "s", "m", "l", "xl", "xxl", "xxxl"],
+    },
+    {
+      name: "Shirt",
+      price: 1000,
+      discount: 20,
+      path: "https://levi.in/cdn/shop/files/A65580004_01_Styleshot_360x.jpg?v=1736856481",
+      size: ["xs", "s", "m", "l", "xl", "xxl", "xxxl"],
+    },
+    {
+      name: "Shirt",
+      price: 1000,
+      discount: 20,
+      path: "https://levi.in/cdn/shop/files/A39070061_01_Styleshot_360x.jpg?v=1736750139",
+      size: ["xs", "s", "m", "l", "xl", "xxl", "xxxl"],
+    },
+    {
+      name: "Shirt",
+      price: 1000,
+      discount: 20,
+      path: "https://levi.in/cdn/shop/files/237710572_05_Styleshot_360x.jpg?v=1734527385",
+      size: ["xs", "s", "m", "l", "xl", "xxl", "xxxl"],
+    },
+  ];
+
+  console.log(product);
+
+  for (let value of product) {
+    console.log(value);
+    document.write(`
+        <div>
+            <img src="${value.path}" />
+            <h2>Price : ${value.price}</h2>
+            <p>Product name : ${value.name}</p>
+            <p>Product Size : ${value.size.join(" | ")}</p>
+            <button>Add To Cart </button>
+
+         </div>
+    `);
+  }
+  console.log(JSON.stringify(product));
+  //Convert the JS into JSON Script 
+  //Used to pass data from one platform to another
+</script>
+
+<style>
+  div {
+    border: solid;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+  }
+  img {
+    width: 100%;
+  }
+</style>

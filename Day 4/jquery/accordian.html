@@ -1,0 +1,37 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<h1>hello</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus sequi
+  esse soluta vero omnis, ipsum molestias obcaecati ad dolor.
+</p>
+<h1>MET</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus sequi
+  esse soluta vero omnis, ipsum molestias obcaecati ad dolor.
+</p>
+<h1>Cdac</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus sequi
+  esse soluta vero omnis, ipsum molestias obcaecati ad dolor.
+</p>
+<script>
+  $(document).ready(function () {
+    $("p").hide();
+    $("p").first().show();
+
+    $("h1").click(function () {
+    $('p').slideUp()
+    $(this).next().slideDown()
+    });
+  });
+</script>
+
+<style>
+  h1,
+  p {
+    border: solid;
+    margin: 0;
+    padding: 15px;
+  }
+</style>

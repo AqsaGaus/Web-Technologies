@@ -1,0 +1,20 @@
+<script>
+  function emi(p, r, n = 20) {
+    // Functional Scope
+    console.log("Function Call");
+
+    console.log(p, r, n);
+  }
+
+  function emi(p, r, n = 20) {
+    console.log("Function Call 1");
+    console.log(p, r, n);
+    r = r / 12 / 100;
+    n = n * 12;
+
+    var emi = (p * r * (1 + r) ** n) / ((1 + r) ** n - 1);
+    console.log(emi);
+  }
+  emi(2500000, 8.45, 30);
+  emi(2500000, 8.45);
+</script>
