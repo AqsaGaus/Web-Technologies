@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button onclick="validateInput()">Submit</button>
+    <p id="error" style="color: red;"></p>
+</body>
+</html>
+<script>
+    function validateInput() {
+        let inputValue = document.getElementById("txt").value;
+        let errorMessage = document.getElementById("error");
+
+        if (isNaN(inputValue) || inputValue.trim() === "") {
+            errorMessage.textContent = "Error: Only numbers are required.";
+        } else {
+            errorMessage.textContent = "";
+        }
+    }
+</script>

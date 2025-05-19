@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <label for="txt">Enter a value:</label>
+  <input type="text" id="txt">
+  <button onclick="checkValue()">Check</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkValue() {
+      const value = document.getElementById("txt").value;
+      const resultParagraph = document.getElementById("result");
+
+      // Check if the value is a number or string
+      if (isNaN(value)) {
+        resultParagraph.textContent = `"${value}" is a string.`;
+      } else {
+        resultParagraph.textContent = `"${value}" is a number.`;
+      }
+    }
+  </script>
+
+</body>
+</html>

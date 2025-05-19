@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+
+    <h1>Array Creation Using new Array() Example</h1>
+
+    <p><strong>Array with specific values:</strong> <span id="arrayWithValues"></span></p>
+    <p><strong>Array with empty slots (length 5):</strong> <span id="emptyArray"></span></p>
+
+    <script>
+        const numbersArray = new Array(10, 20, 30, 40, 50);
+        const emptyArray = new Array(5); 
+        document.getElementById('arrayWithValues').textContent = numbersArray;
+        document.getElementById('emptyArray').textContent = emptyArray;
+        console.log("Array with values:", numbersArray);  
+        console.log("Array with empty slots:", emptyArray); 
+    </script>
+
+</body>
+</html>
